@@ -1,0 +1,21 @@
+.nevber{
+    height: 80px;
+    background: #1C2B35;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 112px;
+    padding-right: 112px;
+}
+.nevber .menu a{
+   text-decoration: none;
+    margin-right: 32px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #FFF;  
+}
+
+.nevber .menu a:hover{
+    color: chocolate;
+    
+}

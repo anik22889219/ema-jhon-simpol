@@ -1,0 +1,22 @@
+.shop{
+display: grid;
+grid-template-columns: 3fr 1fr;
+}
+.order-summary{
+    background-color: #ff9900ad;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin: 20px;
+}
+@media screen and (max-width: 1260px)  {
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        justify-content: space-around;
+    }
+    
+}
