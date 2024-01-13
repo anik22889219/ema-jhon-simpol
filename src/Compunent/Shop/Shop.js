@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../Shop/Shop.css'
 import Card from '../Card/Card';
+import OderSummery from '../OrderSummery/OderSummery';
 
 const Shop = () => {
     const [products,setProducts] = useState([])
@@ -16,7 +17,7 @@ const Shop = () => {
     const addTocard=(product)=>{
         const newCard = [...card,product];
         setCard(newCard);
-        console.log(newCard)
+        // console.log(newCard)
         }
     
     return (
@@ -30,11 +31,9 @@ const Shop = () => {
                         addTocard ={addTocard}
                     ></Card>)
                 }
-                
             </div>
-            <div className="order-summary">
-                <h3>Oder Summary</h3>
-                <p>Selected Items:{card.length}</p>
+            <div>
+                <OderSummery products={card}></OderSummery>
 
             </div>
         </div>

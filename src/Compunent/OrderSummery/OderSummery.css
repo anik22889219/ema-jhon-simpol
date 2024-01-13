@@ -1,0 +1,93 @@
+.order-summary{
+
+    background-color: #ff9900ad;
+    width: 264px;
+    height: 944px;
+    padding-left: 20px;
+    position: sticky;
+    top: 0px;
+    transition: transform 2s ease-out;
+    
+}
+.order-summary h3{
+    text-align: center;
+    margin: 0px;
+    padding-top: 14px;
+    font-size: 25px;
+    font-weight: 400;
+    color: #1C2B35;
+    
+}
+.order-summary h4{
+    margin: 0px;
+    font-size: 21px;
+    font-weight: 400;
+    color: #0E161A;
+    margin-top:25px;
+    margin-bottom: 0px;
+}
+.order-summary p{
+    font-size: 17px;
+    font-weight: 400;
+    color: #2A414F;
+    margin-top:25px;
+    margin-bottom: 0px;
+}
+.order-summary p:hover{
+    color: #FFF;
+    font-weight: 600;
+    transform: scale(1.01);
+}
+.order-summary h3:hover{
+    color: #FFF;
+    font-weight: 600;
+    transform: scale(1.1);
+}
+.order-summary h4:hover{
+    color: #FFF;
+    font-weight: 600;
+    transform: scale(1.1);
+}
+#Clear-Cart{
+    width: 232px;
+    height: 48px;
+    background: #FF3030;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 400;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content:center; 
+}
+#Review-order{
+    width: 232px;
+    height: 48px;
+    background: #F90;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 400;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content:center; 
+}
+
+
+.btn-continer{
+    margin-top: 40px;
+}
+
+.btn-continer button{
+    color: #FFF;
+    margin-bottom: 16px;
+    font-size: 17px;
+    font-weight: 400;
+    transition: transform .2s;
+}
+.btn-continer button:hover{
+    transform: scale(1.1);
+}
+.btn-continer button span{
+    margin-left: 6px;
+}
