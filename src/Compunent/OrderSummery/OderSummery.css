@@ -9,6 +9,14 @@
     transition: transform 2s ease-out;
     
 }
+.order-details{
+    font-size: 17px;
+    font-weight: 400;
+    color: #2A414F;
+    margin-top:25px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
 .order-summary h3{
     text-align: center;
     margin: 0px;
@@ -19,7 +27,7 @@
     
 }
 .order-summary h4{
-    margin: 0px;
+    
     font-size: 21px;
     font-weight: 400;
     color: #0E161A;
@@ -27,11 +35,7 @@
     margin-bottom: 0px;
 }
 .order-summary p{
-    font-size: 17px;
-    font-weight: 400;
-    color: #2A414F;
-    margin-top:25px;
-    margin-bottom: 0px;
+
 }
 .order-summary p:hover{
     color: #FFF;
@@ -90,4 +94,34 @@
 }
 .btn-continer button span{
     margin-left: 6px;
+}
+
+@media screen and (max-width: 460px) {
+    .order-summary{
+        width: auto;
+        height: auto;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .order-details{
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        /* display: inline-flex; */
+        gap: 5px;
+        font-size: 12px;
+        font-weight:600;
+    }
+    .order-summary h4{
+        margin: 0px 20px;
+    }
+    .btn-continer{
+        margin-top: 5px;
+    }
+    
 }

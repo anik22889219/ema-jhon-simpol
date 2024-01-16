@@ -45,7 +45,7 @@ const Shop = () => {
                 newCard = [...rest,selecetedProduct];
                 
         }
-        console.log(newCard);
+        // console.log(newCard);
         
         setCard(newCard);
         addToDb(selecetedProduct.id)

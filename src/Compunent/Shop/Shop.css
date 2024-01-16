@@ -18,10 +18,14 @@ grid-template-columns: 3fr 1fr;
     }
     
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 460px) {
+    .shop{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
     .card{
-        display: grid;
-        grid-template-columns: 1fr ;
-        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
     }
 }
