@@ -4,12 +4,13 @@ import clear from '../../images/trash-alt.svg'
 import Review from '../../images/arrow-right.svg'
 
 const OderSummery = ({products}) => {
-    console.log(products);
+    // console.log(products);
     let TotelPrice = 0;
     let TotalShippingCharg =0 ;
+    let quantity = 0 ; 
     for(const product of products){
-        
-        TotelPrice =TotelPrice + product.price;
+        quantity = quantity + product.quantity
+        TotelPrice =TotelPrice + product.price*product.quantity;
         TotalShippingCharg = TotalShippingCharg +product.shipping
     }
    let Taxt = parseFloat((TotelPrice*0.1).toFixed(2))
@@ -17,7 +18,7 @@ const OderSummery = ({products}) => {
     return (
         <div className='order-summary'>
                 <h3>Oder Summary</h3>
-                <p>Selected Items: {products.length}</p>
+                <p>Selected Items: {quantity}</p>
                 <p>Totel Price:${TotelPrice}</p>
                 <p>Total Shoping Charge:${TotalShippingCharg}</p>
                 <p>Taxt:${Taxt}</p>
